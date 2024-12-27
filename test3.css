@@ -1,0 +1,247 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: #f5f5f5;
+    scroll-behavior:smooth;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header */
+.welcome-bar {
+    background: rgb(8, 28, 21);
+    padding: 20px;
+    text-align: center;
+    font-size: 29px;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #fff;
+}
+
+.welcome-bar .welcome {
+    font-weight: 700;
+    color: orange;
+}
+
+/* Navigation */
+nav {
+    background-color: rgb(11, 40, 30);
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 15px;
+}
+
+nav a {
+    color: #f5f5f5;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: orange;
+    color: #121212;
+}
+
+/* Welcome Area */
+.welcome-area {
+    text-align: center;
+    padding: 60px 20px;
+    background: rgb(22, 80, 60);
+}
+
+.welcome-area h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: orange;
+}
+
+.welcome-area p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #bbb;
+}
+
+/* About Me */
+#about {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: rgb(28, 99, 74);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#about h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: orange;
+    text-transform: uppercase;
+}
+
+#about p {
+    font-size: 20px;
+    color: #ffffff;
+    line-height: 1.8;
+    text-align: center;
+    max-width: 600px;
+}
+
+#about .ahmed {
+    color: #ffd700;
+    font-weight: 600;
+}
+
+#about .degree {
+    color: #ffd700;
+    font-weight: 600;
+}
+
+/* Skills Section */
+#skills {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: rgb(34, 119, 89);
+}
+
+#skills h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: orange;
+    text-transform: uppercase;
+}
+
+.skills-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skills-gallery img {
+    width: 250px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: grayscale(100%);
+}
+
+.skills-gallery img:hover {
+    transform: scale(1.1);
+    filter: grayscale(0);
+}
+
+/* Projects Section */
+#projects {
+    padding: 50px 20px;
+    background-color: rgb(39, 139, 104);
+    text-align: center;
+}
+
+#projects h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: orange;
+    text-transform: uppercase;
+
+}
+
+.projects-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.projects-gallery img {
+    width: 200px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    filter: grayscale(100%);
+}
+
+.projects-gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.8);
+    filter: grayscale(0);
+}
+
+/* Contact Section */
+#contact {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: rgb(45, 159, 119);
+}
+
+#contact h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: orange;
+    text-transform: uppercase;
+      
+}
+
+#contact ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#contact ul li {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #ffffff;
+}
+
+#contact ul li a {
+    color: #ffd700;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+#contact ul li a:hover {
+    color: #ffd700;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .skills-gallery img,
+    .projects-gallery img {
+        width: 100px;
+    }
+
+    .welcome-bar {
+        font-size: 1.4rem;
+    }
+
+    .welcome-area h1 {
+        font-size: 2rem;
+    }
+}
